@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "chooseLanguage": "Elegir idioma",
+    "description": "Actualizaciones en tiempo real, planificación de viajes y todo lo que necesita para navegar por el sistema de transporte público de la ciudad de New York.",
+    "planner": "Planifica tu viaje",
+    "alerts": "Alertas de servicio"
+  },
+  "features": {
+    "title": "Todo lo que necesita para el transporte público de la ciudad de Nueva York"
+  },
+  "updates": {
+    "realTimeUpdates": "Actualizaciones en tiempo real",
+    "realTimeUpdatesDescription": "Obtén actualizaciones en vivo sobre llegadas de trenes, retrasos y cambios en el servicio en todas las líneas de tránsito de la ciudad de Nueva York."
+  },
+  "trips": {
+    "tripPlanning": "Planificación de viajes",
+    "tripPlanningDescription": "Planifique su viaje con nuestro buscador de rutas optimizado que tiene en cuenta las condiciones actuales del servicio."
+  },
+  "stations": {
+    "stationInfo": "Información de la estación",
+    "stationInfoDescription": "Acceda a información detallada sobre las estaciones, incluidas las características de accesibilidad y los servicios cercanos."
+  },
+  "transitStatus": {
+    "title": "Estado del sistema de tránsito",
+    "subwayLineStatus": "Estado de la línea de metro",
+    "viewCompleteStatus": "Ver el estado completo del sistema"
+  },
+  "status": {
+    "goodService": "Buen servicio",
+    "minorDelays": "Retrasos menores",
+    "serviceChanges": "Cambios en el servicio"
+  },
+  "footer": {
+    "description": "Su compañero esencial para navegar por el sistema de transporte de la ciudad de Nueva York.",
+    "quickLinks": "Enlaces rápidos",
+    "tripPlanner": "Planificador de viajes",
+    "maps": "Mapas",
+    "faresPasses": "Tarifas y Pases",
+    "accessibility": "Accesibilidad",
+    "resources": "Recursos",
+    "helpCenter": "Centro de ayuda",
+    "serviceAlerts": "Alertas de servicio",
+    "contactUs": "Contáctenos",
+    "about": "Acerca de",
+    "connect": "Conectar",
+    "emailAddress": "Dirección de correo electrónico",
+    "emailPlaceholder": "Su dirección de correo electrónico",
+    "subscribe": "Subscribir",
+    "allRightsReserved": "Todos los derechos reservados."
+  }
+}

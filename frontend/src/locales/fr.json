@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "chooseLanguage": "Choisissez la langue",
+    "description": "Mises à jour en temps réel, planification de vos trajets et tout ce dont vous avez besoin pour naviguer dans le système de transport en commun de New York.",
+    "planner": "Planifiez votre voyage",
+    "alerts": "Alertes de service"
+  },
+  "features": {
+    "title": "Tout ce dont vous avez besoin pour NYC Transit"
+  },
+  "updates": {
+    "realTimeUpdates": "Mises à jour en temps réel",
+    "realTimeUpdatesDescription": "Obtenez des mises à jour en direct sur les arrivées de trains, les retards et les changements de service sur toutes les lignes de transport en commun de New York."
+  },
+  "trips": {
+    "tripPlanning": "Planification de voyage",
+    "tripPlanningDescription": "Planifiez votre trajet grâce à notre localisateur d’itinéraire optimisé qui tient compte des conditions de service actuelles."
+  },
+  "stations": {
+    "stationInfo": "Informations sur la gare",
+    "stationInfoDescription": "Accédez à des informations détaillées sur les stations, y compris les caractéristiques d’accessibilité et les commodités à proximité."
+  },
+  "transitStatus": {
+    "title": "État du système de transport en commun",
+    "subwayLineStatus": "État de la ligne de métro",
+    "viewCompleteStatus": "Afficher l’état complet du système"
+  },
+  "status": {
+    "goodService": "Bon service",
+    "minorDelays": "Retards mineurs",
+    "serviceChanges": "Modifications du service"
+  },
+  "footer": {
+    "description": "Votre compagnon essentiel pour naviguer dans le système de transport de New York.",
+    "quickLinks": "Liens rapides",
+    "tripPlanner": "Planificateur de voyage",
+    "maps": "Cartes",
+    "faresPasses": "Tarifs et passes",
+    "accessibility": "Accessibilité",
+    "resources": "Ressources",
+    "helpCenter": "Centre d’aide",
+    "serviceAlerts": "Alertes de service",
+    "contactUs": "Contactez-nous",
+    "about": "Environ",
+    "connect": "Relier",
+    "emailAddress": "Adresse courriel",
+    "emailPlaceholder": "Votre adresse e-mail",
+    "subscribe": "S’inscrire",
+    "allRightsReserved": "Tous droits réservés."
+  }
+}

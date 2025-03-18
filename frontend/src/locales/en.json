@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "chooseLanguage": "Choose Language",
+    "description": "Real-time updates, trip planning, and everything you need for navigating New York City's transit system.",
+    "planner": "Plan Your Trip",
+    "alerts": "Service Alerts"
+  },
+  "features": {
+    "title": "Everything You Need for NYC Transit"
+  },
+  "updates": {
+    "realTimeUpdates": "Real-time Updates",
+    "realTimeUpdatesDescription": "Get live updates on train arrivals, delays, and service changes across all NYC transit lines."
+  },
+  "trips": {
+    "tripPlanning": "Trip Planning",
+    "tripPlanningDescription": "Plan your journey with our optimized route finder that considers current service conditions."
+  },
+  "stations": {
+    "stationInfo": "Station Information",
+    "stationInfoDescription": "Access detailed information about stations, including accessibility features and nearby amenities."
+  },
+  "transitStatus": {
+    "title": "Transit System Status",
+    "subwayLineStatus": "Subway Line Status",
+    "viewCompleteStatus": "View Complete System Status"
+  },
+  "status": {
+    "goodService": "Good Service",
+    "minorDelays": "Minor Delays",
+    "serviceChanges": "Service Changes"
+  },
+  "footer": {
+    "description": "Your essential companion for navigating New York City's transportation system.",
+    "quickLinks": "Quick Links",
+    "tripPlanner": "Trip Planner",
+    "maps": "Maps",
+    "faresPasses": "Fares & Passes",
+    "accessibility": "Accessibility",
+    "resources": "Resources",
+    "helpCenter": "Help Center",
+    "serviceAlerts": "Service Alerts",
+    "contactUs": "Contact Us",
+    "about": "About",
+    "connect": "Connect",
+    "emailAddress": "Email address",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "allRightsReserved": "All rights reserved."
+  }
+}

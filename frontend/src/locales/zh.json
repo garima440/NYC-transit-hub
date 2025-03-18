@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "chooseLanguage": "选择 Language",
+    "description": "实时更新、旅行计划以及导航纽约市交通系统所需的一切。",
+    "planner": "规划您的行程",
+    "alerts": "服务提醒"
+  },
+  "features": {  
+    "title": "纽约市交通所需的一切"
+  },
+  "updates": {
+    "realTimeUpdates": "实时更新",
+    "realTimeUpdatesDescription": "获取有关纽约市所有公交线路的火车到达、晚点和服务变更的实时更新。"
+  },
+  "trips": {
+    "tripPlanning": "旅行规划",
+    "tripPlanningDescription": "使用我们考虑当前服务条件的优化路线查找器规划您的旅程。"
+  },
+  "stations": {
+    "stationInfo": "车站信息",
+    "stationInfoDescription": "访问有关车站的详细信息，包括无障碍设施和附近的便利设施。"
+  },
+  "transitStatus": {
+    "title": "Transit System 状态",
+    "subwayLineStatus": "地铁线路状态",
+    "viewCompleteStatus": "查看完整的系统状态"
+  },
+  "status": {
+    "goodService": "良好的服务",
+    "minorDelays": "轻微延误",
+    "serviceChanges": "服务变更"
+  },
+  "footer": {
+    "description": "您游览纽约市交通系统的重要伴侣。",
+    "quickLinks": "快速链接",
+    "tripPlanner": "旅行规划",
+    "maps": "地图",
+    "faresPasses": "票价和通行证",
+    "accessibility": "可及性",
+    "resources": "资源",
+    "helpCenter": "帮助中心",
+    "serviceAlerts": "服务提醒",
+    "contactUs": "联系我们",
+    "about": "大约",
+    "connect": "连接",
+    "emailAddress": "电子邮件地址",
+    "emailPlaceholder": "您的电子邮件地址",
+    "subscribe": "订阅",
+    "allRightsReserved": "保留所有权利。"
+  }
+}

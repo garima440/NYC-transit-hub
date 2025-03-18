@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "chooseLanguage": "اختر اللغة",
+    "description": "تحديثات في الوقت الفعلي وتخطيط الرحلات وكل ما تحتاجه للتنقل في نظام النقل في مدينة نيويورك.",
+    "planner": "خطط لرحلتك",
+    "alerts": "تنبيهات الخدمة"
+  },
+  "features": {
+    "title": "كل ما تحتاجه لمدينة نيويورك ترانزيت"
+  },
+  "updates": {
+    "realTimeUpdates": "تحديثات في الوقت الحقيقي",
+    "realTimeUpdatesDescription": "احصل على تحديثات مباشرة حول وصول القطارات والتأخير وتغييرات الخدمة عبر جميع خطوط النقل في مدينة نيويورك."
+  },
+  "trips": {
+    "tripPlanning": "تخطيط الرحلة",
+    "tripPlanningDescription": "خطط لرحلتك باستخدام أداة البحث عن المسار المحسنة التي تراعي ظروف الخدمة الحالية."
+  },
+  "stations": {
+    "stationInfo": "معلومات المحطة",
+    "stationInfoDescription": "يمكنك الوصول إلى معلومات مفصلة حول المحطات، بما في ذلك ميزات إمكانية الوصول والمرافق القريبة."
+  },
+  "transitStatus": {
+    "title": "حالة نظام النقل",
+    "subwayLineStatus": "حالة خط مترو الأنفاق",
+    "viewCompleteStatus": "عرض حالة النظام الكاملة"
+  },
+  "status": {
+    "goodService": "خدمة جيدة",
+    "minorDelays": "تأخيرات طفيفة",
+    "serviceChanges": "تغييرات الخدمة"
+  },
+  "footer": {
+    "description": "رفيقك الأساسي للتنقل في نظام النقل في مدينة نيويورك.",
+    "quickLinks": "روابط سريعة",
+    "tripPlanner": "مخطط الرحلات",
+    "maps": "الخرائط",
+    "faresPasses": "الأسعار والتذاكر",
+    "accessibility": "امكانيه الوصول",
+    "resources": "موارد",
+    "helpCenter": "مركز المساعدة",
+    "serviceAlerts": "تنبيهات الخدمة",
+    "contactUs": "اتصل بنا",
+    "about": "حول",
+    "connect": "اتصل",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "عنوان بريدك الإلكتروني",
+    "subscribe": "اشترك",
+    "allRightsReserved": "كل الحقوق محفوظة."
+  }
+}

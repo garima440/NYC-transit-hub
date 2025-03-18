@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "chooseLanguage": "言語を選択してください",
+    "description": "リアルタイムの更新、旅行計画、ニューヨーク市の交通システムをナビゲートするために必要なすべての情報。",
+    "planner": "旅行を計画する",
+    "alerts": "サービスアラート"
+  },
+  "features": {
+    "title": "ニューヨーク市交通のために必要なすべて"
+  },
+  "updates": {
+    "realTimeUpdates": "リアルタイム更新",
+    "realTimeUpdatesDescription": "ニューヨーク市のすべての交通機関の列車の到着、遅延、サービス変更に関するライブ更新を取得します。"
+  },
+  "trips": {
+    "tripPlanning": "旅行計画",
+    "tripPlanningDescription": "現在のサービス状況を考慮した最適化ルートファインダーで旅を計画してください。"
+  },
+  "stations": {
+    "stationInfo": "駅情報",
+    "stationInfoDescription": "駅に関する詳細情報、アクセシビリティ機能や近くのアメニティを含む情報にアクセスできます。"
+  },
+  "transitStatus": {
+    "title": "交通システムの状況",
+    "subwayLineStatus": "地下鉄路線の状況",
+    "viewCompleteStatus": "システムの完全な状態を表示"
+  },
+  "status": {
+    "goodService": "良いサービス",
+    "minorDelays": "軽微な遅延",
+    "serviceChanges": "サービス変更"
+  },
+  "footer": {
+    "description": "ニューヨーク市の交通システムをナビゲートするための必須の相棒。",
+    "quickLinks": "クイックリンク",
+    "tripPlanner": "旅行プランナー",
+    "maps": "地図",
+    "faresPasses": "運賃とパス",
+    "accessibility": "アクセシビリティ",
+    "resources": "リソース",
+    "helpCenter": "ヘルプセンター",
+    "serviceAlerts": "サービスアラート",
+    "contactUs": "お問い合わせ",
+    "about": "約",
+    "connect": "接続する",
+    "emailAddress": "メールアドレス",
+    "emailPlaceholder": "あなたのメールアドレス",
+    "subscribe": "購読する",
+    "allRightsReserved": "全著作権所有。"
+  }
+}
