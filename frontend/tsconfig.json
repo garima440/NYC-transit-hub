@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/**/*"
-  ],
+, "app/lib/i18n/i18n.js", "app/context"  ],
   "exclude": ["node_modules"]
 }

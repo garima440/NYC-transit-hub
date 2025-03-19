@@ -1,7 +1,7 @@
 "use client";
-import "../src/config/i18n";
-import { LanguageProvider } from "../src/context/LanguageContext";
-import LanguageSelector from "../src/components/LanguageSelector";
+import "./lib/i18n/i18n";
+import { LanguageProvider } from "./context/LanguageContext";
+import LanguageSelector from "./components/LanguageSelector";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 

@@ -1,14 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import en from "D:/projects/NYC-transit-hub/frontend/src/locales/en.json";
-import ar from "D:/projects/NYC-transit-hub/frontend/src/locales/ar.json";
-import es from "D:/projects/NYC-transit-hub/frontend/src/locales/es.json";
-import fr from "D:/projects/NYC-transit-hub/frontend/src/locales/fr.json";
-import jp from "D:/projects/NYC-transit-hub/frontend/src/locales/jp.json";
-import ko from "D:/projects/NYC-transit-hub/frontend/src/locales/ko.json";
-import ru from "D:/projects/NYC-transit-hub/frontend/src/locales/ru.json";
-import zh from "D:/projects/NYC-transit-hub/frontend/src/locales/zh.json";
+import en from "../i18n/en.json";
+import ar from "../i18n/ar.json";
+import es from "../i18n/es.json";
+import fr from "../i18n/fr.json";
+import jp from "../i18n/jp.json";
+import ko from "../i18n/ko.json";
+import ru from "../i18n/ru.json";
+import zh from "../i18n/zh.json";
 
 i18n
   .use(LanguageDetector)

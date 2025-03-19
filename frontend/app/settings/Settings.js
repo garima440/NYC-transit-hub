@@ -1,5 +1,5 @@
 import React from "react";
-import LanguageSelector from "./LanguageSelector";
+import LanguageSelector from "../components/LanguageSelector";
 
 const Settings = () => {
   return (
