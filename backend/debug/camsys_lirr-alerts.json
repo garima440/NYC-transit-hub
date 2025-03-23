@@ -1,0 +1,1540 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": 1742685543,
+    "transit_realtime.mercury_feed_header": {
+      "mercury_version": "1.0"
+    }
+  },
+  "entity": [
+    {
+      "id": "lmm:planned_work:23343",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1742572800,
+            "end": 1743415200
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "9",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:9:3"
+            }
+          },
+          {
+            "agency_id": "LI",
+            "stop_id": "25"
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "The restrooms at Bayside are closed for emergency maintenance.",
+              "language": "en"
+            },
+            {
+              "text": "<p>The restrooms at <b>Bayside</b> are closed for emergency maintenance.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Access to the Station Building is unaffected.",
+              "language": "en"
+            },
+            {
+              "text": "<p>Access to the Station Building is unaffected.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742576899,
+          "updated_at": 1742577578,
+          "alert_type": "Station Notice",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 21 - 31, Fri 12:00 PM to Mon 6:00 AM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23306",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1744034400,
+            "end": 1744053300
+          },
+          {
+            "start": 1744639200,
+            "end": 1744658100
+          },
+          {
+            "start": 1745244000,
+            "end": 1745262900
+          },
+          {
+            "start": 1744120800,
+            "end": 1744139700
+          },
+          {
+            "start": 1744725600,
+            "end": 1744744500
+          },
+          {
+            "start": 1745330400,
+            "end": 1745349300
+          },
+          {
+            "start": 1744207200,
+            "end": 1744226100
+          },
+          {
+            "start": 1744812000,
+            "end": 1744830900
+          },
+          {
+            "start": 1745416800,
+            "end": 1745435700
+          },
+          {
+            "start": 1744293600,
+            "end": 1744312500
+          },
+          {
+            "start": 1744898400,
+            "end": 1744917300
+          },
+          {
+            "start": 1745503200,
+            "end": 1745522100
+          },
+          {
+            "start": 1744380000,
+            "end": 1744398900
+          },
+          {
+            "start": 1745589600,
+            "end": 1745608500
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "2",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:2:16"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Westbound trains skip Elmont-UBS Arena, Queens Village, and Hollis",
+              "language": "en"
+            },
+            {
+              "text": "<p>Westbound trains skip Elmont-UBS Arena, Queens Village, and Hollis</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "MTA buses will accept LIRR tickets for travel from Queens Village and Hollis to Jamaica. View a map of your route options.\nElmont-UBS Arena riders should use Bellerose station instead.\n\nFollow this link for information about transferring at the 165 St/Jamaica Bus Terminal.\n\nWhat's happening?\nAccessibility improvements",
+              "language": "en"
+            },
+            {
+              "text": "<p>MTA buses will accept LIRR tickets for travel from Queens Village and Hollis to Jamaica. <a title=\"\" href=\"https://files.mta.info/s3fs-public/2024-07/LIRR-QueensBuses-cross-honor.png\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">View a map of your route options</a><a title=\"\" href=\"https://new.mta.info/sites/default/files/2024-07/LIRR%20PSC.png\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">.</a></p><p>Elmont-UBS Arena riders should use Bellerose station instead.</p><p style=\"min-height:10px\"></p><p>Follow <a title=\"\" href=\"https://new.mta.info/stations/jamaica/local-buses\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">this link</a> for information about transferring at the 165 St/Jamaica Bus Terminal.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p><a title=\"\" href=\"https://www.mta.info/article/service-changes-hollis-queens-village-and-elmont-through-2027\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">Accessibility improvements</a></p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742393166,
+          "updated_at": 1742393166,
+          "alert_type": "Planned - Stops Skipped",
+          "station_alternative": [
+            {
+              "affected_entity": {
+                "agency_id": "LI",
+                "stop_id": "359"
+              },
+              "notes": {
+                "translation": [
+                  {
+                    "text": "Use nearby Bellerose station instead.",
+                    "language": "en"
+                  },
+                  {
+                    "text": "<p>Use nearby <b>Bellerose</b> station instead.</p>",
+                    "language": "en-html"
+                  }
+                ]
+              }
+            },
+            {
+              "affected_entity": {
+                "agency_id": "LI",
+                "stop_id": "175"
+              },
+              "notes": {
+                "translation": [
+                  {
+                    "text": "Q36 across Jamaica Ave, or Q2 / Q110 at Hempstead Av / Springfield Blvd\nTransfer at 165 St Terminal for Q6 to Jamaica LIRR",
+                    "language": "en"
+                  },
+                  {
+                    "text": "<p><b>Q36</b> across Jamaica Ave, or <b>Q2</b>&nbsp;/ <b>Q110</b>&nbsp;at Hempstead Av / Springfield Blvd</p><p>Transfer at 165 St Terminal for \u200c<b>Q6</b> to Jamaica LIRR</p>",
+                    "language": "en-html"
+                  }
+                ]
+              }
+            },
+            {
+              "affected_entity": {
+                "agency_id": "LI",
+                "stop_id": "89"
+              },
+              "notes": {
+                "translation": [
+                  {
+                    "text": "Q2 at Hollis Av / 99 Av or Q3 at Farmers Blvd / Hollis Av\nTransfer at 165 St Terminal for Q6 to Jamaica LIRR\n\nQ110 at Jamaica Av / 193 St\nTransfer at Parsons Blvd for Q6 to Jamaica LIRR",
+                    "language": "en"
+                  },
+                  {
+                    "text": "<p><b>Q2</b> at Hollis Av / 99 Av or <b>Q3</b>&nbsp;at Farmers Blvd / Hollis Av</p><p>Transfer at 165 St Terminal for <b>Q6</b> to Jamaica LIRR</p><p></p><p><b>Q110</b>&nbsp;at Jamaica Av / 193 St</p><p>Transfer at Parsons Blvd for <b>Q6</b>&nbsp;to Jamaica LIRR</p>",
+                    "language": "en-html"
+                  }
+                ]
+              }
+            }
+          ],
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Apr 7 - 11, Apr 14 - 17, and Apr 21 - 25, Mon to Fri, 10:00 AM to 3:15 PM (except Apr 18)",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23302",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1743240600,
+            "end": 1743303600
+          },
+          {
+            "start": 1743327000,
+            "end": 1743390000
+          },
+          {
+            "start": 1743845400,
+            "end": 1743908400
+          },
+          {
+            "start": 1743931800,
+            "end": 1743994800
+          },
+          {
+            "start": 1744450200,
+            "end": 1744513200
+          },
+          {
+            "start": 1744536600,
+            "end": 1744599600
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "10",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:10:11"
+            }
+          },
+          {
+            "agency_id": "LI",
+            "route_id": "12",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:12:11"
+            }
+          },
+          {
+            "agency_id": "LI",
+            "route_id": "4",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:4:11"
+            }
+          },
+          {
+            "agency_id": "LI",
+            "route_id": "6",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:6:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Some LIRR trains run on revised schedules",
+              "language": "en"
+            },
+            {
+              "text": "<p>Some LIRR trains run on revised schedules</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Use the TrainTime app or visit mta.info/schedules to plan your revised trip.\n\nWhat's happening?\nSwitch replacement",
+              "language": "en"
+            },
+            {
+              "text": "<p>Use the TrainTime app or visit <a title=\"\" href=\"https://mta.info/schedules\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">mta.info/schedules</a> to plan your revised trip.</p><p></p><p><strong>What's happening?</strong></p><p>Switch replacement</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742312555,
+          "updated_at": 1742312555,
+          "alert_type": "Special Schedule",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 29 - 30, Apr 5 - 6, and Apr 12 - 13, Sat and Sun",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23301",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1743240600,
+            "end": 1743307140
+          },
+          {
+            "start": 1743327000,
+            "end": 1743393540
+          },
+          {
+            "start": 1743845400,
+            "end": 1743911940
+          },
+          {
+            "start": 1743931800,
+            "end": 1743998340
+          },
+          {
+            "start": 1744450200,
+            "end": 1744516740
+          },
+          {
+            "start": 1744536600,
+            "end": 1744603140
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "5",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:5:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Montauk Branch trains run on revised schedules",
+              "language": "en"
+            },
+            {
+              "text": "<p>Montauk Branch trains run on revised schedules</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Some trains that normally operate between Babylon and points east are extended to and from Jamaica.\n\nOn Sunday, March 30, three extra trains will run for those going to Montauk for the St. Patricks Day Parade.\n\nUse the TrainTime app or visit mta.info/schedules to plan your revised trip.\n\nWhat's happening?\nSwitch replacement",
+              "language": "en"
+            },
+            {
+              "text": "<p>Some trains that normally operate between Babylon and points east are extended to and from Jamaica.</p><p style=\"min-height:10px\"></p><p>On Sunday, March 30, three extra trains will run for those going to Montauk for the St. Patricks Day Parade.</p><p style=\"min-height:10px\"></p><p>Use the TrainTime app or visit <a title=\"\" href=\"https://mta.info/schedules\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">mta.info/schedules</a> to plan your revised trip.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p>Switch replacement</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742312383,
+          "updated_at": 1742312383,
+          "alert_type": "Special Schedule",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 29 - 30, Apr 5 - 6, and Apr 12 - 13, Sat and Sun",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23300",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1743219900,
+            "end": 1743400800
+          },
+          {
+            "start": 1743824700,
+            "end": 1744005600
+          },
+          {
+            "start": 1744429500,
+            "end": 1744610400
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:1:13"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Babylon Branch service runs on a reduced schedule",
+              "language": "en"
+            },
+            {
+              "text": "<p>Babylon Branch service runs on a reduced schedule</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Trains will run between Penn Station and Babylon. Transfer at Jamaica for service to and from Grand Central.\n\nUse the TrainTime app or visit mta.info/schedules to plan your revised trip.\n\nWhat's happening?\nSwitch replacement",
+              "language": "en"
+            },
+            {
+              "text": "<p>Trains will run between Penn Station and Babylon. Transfer at Jamaica for service to and from Grand Central.</p><p style=\"min-height:10px\"></p><p>Use the TrainTime app or visit <a title=\"\" href=\"https://mta.info/schedules\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">mta.info/schedules</a> to plan your revised trip.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p>Switch replacement</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742312256,
+          "updated_at": 1742312256,
+          "alert_type": "Reduced Service",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 28 - 31, Apr 4 - 7, and Apr 11 - 14, Fri 11:45 PM to Mon 2:00 AM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23299",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1743220800,
+            "end": 1743400800
+          },
+          {
+            "start": 1743825600,
+            "end": 1744005600
+          },
+          {
+            "start": 1744430400,
+            "end": 1744610400
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "8",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:8:19"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Buses replace trains between Valley Stream and West Hempstead",
+              "language": "en"
+            },
+            {
+              "text": "<p>Buses replace trains between Valley Stream and West Hempstead</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "West Hempstead Branch trains will run between Grand Central and Valley Stream. Transfer at Valley Stream for bus service making all stops to and from West Hempstead.\n\nSt Albans station will be served by Babylon Branch trains on these weekends.\n\nCheck bus departure times on TrainTime or at mta.info/schedules\n\nThe last trains on Friday night leave Jamaica at 11:23pm and West Hempstead at 12:15am.\n\nWhat's happening?\nCrossing rehabilitation",
+              "language": "en"
+            },
+            {
+              "text": "<p>West Hempstead Branch trains will run between Grand Central and Valley Stream. Transfer at Valley Stream for bus service making all stops to and from West Hempstead.</p><p style=\"min-height:10px\"></p><p>St Albans station will be served by Babylon Branch trains on these weekends.</p><p style=\"min-height:10px\"></p><p>Check bus departure times on TrainTime or at <a title=\"\" href=\"https://mta.info/schedules\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">mta.info/schedules</a></p><p style=\"min-height:10px\"></p><p>The last trains on Friday night leave Jamaica at 11:23pm and West Hempstead at 12:15am.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p>Crossing rehabilitation</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742312124,
+          "updated_at": 1742567546,
+          "alert_type": "Planned - Substitute Buses",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 29 - 31, Apr 5 - 7, and Apr 12 - 14, Sat 12:00 AM to Mon 2:00 AM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23231",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1742823000,
+            "end": 1742841000
+          },
+          {
+            "start": 1743427800,
+            "end": 1743445800
+          },
+          {
+            "start": 1742909400,
+            "end": 1742927400
+          },
+          {
+            "start": 1743514200,
+            "end": 1743532200
+          },
+          {
+            "start": 1742995800,
+            "end": 1743013800
+          },
+          {
+            "start": 1743600600,
+            "end": 1743618600
+          },
+          {
+            "start": 1743082200,
+            "end": 1743100200
+          },
+          {
+            "start": 1743687000,
+            "end": 1743705000
+          },
+          {
+            "start": 1743168600,
+            "end": 1743186600
+          },
+          {
+            "start": 1743773400,
+            "end": 1743791400
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "2",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:2:16"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Eastbound trains skip Hollis and Queens Village",
+              "language": "en"
+            },
+            {
+              "text": "<p>Eastbound trains skip Hollis and Queens Village</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "MTA buses will accept LIRR tickets for travel from Jamaica to Hollis and Queens Village. View a map of your route options.\n\nFollow this link for information about transferring at the 165 St/Jamaica Bus Terminal.\n\nWhat's happening?\nAccessibility improvements",
+              "language": "en"
+            },
+            {
+              "text": "<p>MTA buses will accept LIRR tickets for travel from Jamaica to Hollis and Queens Village. <a title=\"\" href=\"https://files.mta.info/s3fs-public/2024-07/LIRR-QueensBuses-cross-honor.png\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">View a map of your route options</a><a title=\"\" href=\"https://new.mta.info/sites/default/files/2024-07/LIRR%20PSC.png\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">.</a></p><p style=\"min-height:10px\"></p><p>Follow <a title=\"\" href=\"https://new.mta.info/stations/jamaica/local-buses\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">this link</a> for information about transferring at the 165 St/Jamaica Bus Terminal.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p><a title=\"\" href=\"https://www.mta.info/article/service-changes-hollis-queens-village-and-elmont-through-2027\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">Accessibility improvements</a></p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1741964980,
+          "updated_at": 1741964980,
+          "alert_type": "Planned - Stops Skipped",
+          "station_alternative": [
+            {
+              "affected_entity": {
+                "agency_id": "LI",
+                "stop_id": "89"
+              },
+              "notes": {
+                "translation": [
+                  {
+                    "text": "Q6 to Parsons Blvd for Q110, or to 165 St Terminal for Q2 or Q3",
+                    "language": "en"
+                  },
+                  {
+                    "text": "<p>\u200c<b>Q6</b> to Parsons Blvd for <b>Q110</b>, or to 165 St Terminal for <b>Q2</b>&nbsp;or <b>Q3</b></p>",
+                    "language": "en-html"
+                  }
+                ]
+              }
+            },
+            {
+              "affected_entity": {
+                "agency_id": "LI",
+                "stop_id": "175"
+              },
+              "notes": {
+                "translation": [
+                  {
+                    "text": "Q6 to 165 St Terminal for Q1, Q2 or Q36, or to Parsons Blvd for Q110",
+                    "language": "en"
+                  },
+                  {
+                    "text": "<p>\u200c<b>Q6</b> to 165 St Terminal for <b>Q1</b>, <b>Q2</b>&nbsp;or <b>Q36</b>, or to Parsons Blvd for <b>Q110</b></p>",
+                    "language": "en-html"
+                  }
+                ]
+              }
+            }
+          ],
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 24 - 28 and Mar 31 - Apr 4, Mon to Fri, 9:30 AM to 2:30 PM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22952",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1741658400,
+            "end": 1741662000
+          },
+          {
+            "start": 1742263200,
+            "end": 1742266800
+          },
+          {
+            "start": 1742868000,
+            "end": 1742871600
+          },
+          {
+            "start": 1743472800,
+            "end": 1743476400
+          },
+          {
+            "start": 1741744800,
+            "end": 1741748400
+          },
+          {
+            "start": 1742349600,
+            "end": 1742353200
+          },
+          {
+            "start": 1742954400,
+            "end": 1742958000
+          },
+          {
+            "start": 1743559200,
+            "end": 1743562800
+          },
+          {
+            "start": 1741831200,
+            "end": 1741834800
+          },
+          {
+            "start": 1742436000,
+            "end": 1742439600
+          },
+          {
+            "start": 1743040800,
+            "end": 1743044400
+          },
+          {
+            "start": 1743645600,
+            "end": 1743649200
+          },
+          {
+            "start": 1741917600,
+            "end": 1741921200
+          },
+          {
+            "start": 1742522400,
+            "end": 1742526000
+          },
+          {
+            "start": 1743127200,
+            "end": 1743130800
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "9",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:9:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "The 10:16pm train from Penn Station to Port Washington will run 4 minutes earlier than usual",
+              "language": "en"
+            },
+            {
+              "text": "<p>The 10:16pm train from Penn Station to Port Washington will run 4 minutes earlier than usual</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "What's happening?\nTrack maintenance",
+              "language": "en"
+            },
+            {
+              "text": "<p><strong>What's happening?</strong></p><p>Track maintenance</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1740416534,
+          "updated_at": 1742353203,
+          "alert_type": "Special Schedule",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mon to Thu, Mar 10 - Apr 3",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22950",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1741656600,
+            "end": 1741660200
+          },
+          {
+            "start": 1742261400,
+            "end": 1742265000
+          },
+          {
+            "start": 1742866200,
+            "end": 1742869800
+          },
+          {
+            "start": 1743471000,
+            "end": 1743474600
+          },
+          {
+            "start": 1741743000,
+            "end": 1741746600
+          },
+          {
+            "start": 1742347800,
+            "end": 1742351400
+          },
+          {
+            "start": 1742952600,
+            "end": 1742956200
+          },
+          {
+            "start": 1743557400,
+            "end": 1743561000
+          },
+          {
+            "start": 1741829400,
+            "end": 1741833000
+          },
+          {
+            "start": 1742434200,
+            "end": 1742437800
+          },
+          {
+            "start": 1743039000,
+            "end": 1743042600
+          },
+          {
+            "start": 1743643800,
+            "end": 1743647400
+          },
+          {
+            "start": 1741915800,
+            "end": 1741919400
+          },
+          {
+            "start": 1742520600,
+            "end": 1742524200
+          },
+          {
+            "start": 1743125400,
+            "end": 1743129000
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "6",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:6:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "The 10:00pm train from Long Beach to Penn Station will run 5 minutes earlier than usual",
+              "language": "en"
+            },
+            {
+              "text": "<p>The 10:00pm train from Long Beach to Penn Station will run 5 minutes earlier than usual</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "What's happening?\nTrack maintenance",
+              "language": "en"
+            },
+            {
+              "text": "<p><strong>What's happening?</strong></p><p>Track maintenance</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1740416412,
+          "updated_at": 1742351401,
+          "alert_type": "Special Schedule",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mon to Thu, Mar 10 - Apr 3",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22949",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1741654800,
+            "end": 1741683600
+          },
+          {
+            "start": 1742259600,
+            "end": 1742288400
+          },
+          {
+            "start": 1742864400,
+            "end": 1742893200
+          },
+          {
+            "start": 1743469200,
+            "end": 1743498000
+          },
+          {
+            "start": 1741741200,
+            "end": 1741770000
+          },
+          {
+            "start": 1742346000,
+            "end": 1742374800
+          },
+          {
+            "start": 1742950800,
+            "end": 1742979600
+          },
+          {
+            "start": 1743555600,
+            "end": 1743584400
+          },
+          {
+            "start": 1741827600,
+            "end": 1741856400
+          },
+          {
+            "start": 1742432400,
+            "end": 1742461200
+          },
+          {
+            "start": 1743037200,
+            "end": 1743066000
+          },
+          {
+            "start": 1743642000,
+            "end": 1743670800
+          },
+          {
+            "start": 1741914000,
+            "end": 1741942800
+          },
+          {
+            "start": 1742518800,
+            "end": 1742547600
+          },
+          {
+            "start": 1743123600,
+            "end": 1743152400
+          },
+          {
+            "start": 1743728400,
+            "end": 1743757200
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:1:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Babylon Branch trains run on revised schedules",
+              "language": "en"
+            },
+            {
+              "text": "<p>Babylon Branch trains run on revised schedules</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Westbound service is reduced to hourly.\n\nUse the TrainTime app or visit mta.info/schedules to plan your revised trip.\n\nWhat's happening?\nTrack maintenance",
+              "language": "en"
+            },
+            {
+              "text": "<p>Westbound service is reduced to hourly.</p><p style=\"min-height:10px\"></p><p>Use the TrainTime app or visit <a title=\"\" href=\"https://mta.info/schedules\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">mta.info/schedules</a> to plan your revised trip.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p>Track maintenance</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1740416257,
+          "updated_at": 1742374805,
+          "alert_type": "Special Schedule",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mon to Fri, 9:00 PM to 5:00 AM, Mar 10 - Apr 4",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22776",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1740890700,
+            "end": 1740893400
+          },
+          {
+            "start": 1741495500,
+            "end": 1741498200
+          },
+          {
+            "start": 1742096700,
+            "end": 1742099400
+          },
+          {
+            "start": 1742701500,
+            "end": 1742704200
+          },
+          {
+            "start": 1740977100,
+            "end": 1740979800
+          },
+          {
+            "start": 1741578300,
+            "end": 1741581000
+          },
+          {
+            "start": 1742183100,
+            "end": 1742185800
+          },
+          {
+            "start": 1742787900,
+            "end": 1742790600
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "6",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:6:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "The 11:58pm train from Penn Station to Long Beach will run 6 minutes earlier than usual",
+              "language": "en"
+            },
+            {
+              "text": "<p>The 11:58pm train from Penn Station to Long Beach will run 6 minutes earlier than usual</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "What's happening?\nSwitch replacement",
+              "language": "en"
+            },
+            {
+              "text": "<p><strong>What's happening?</strong></p><p>Switch replacement</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1739553975,
+          "updated_at": 1742185800,
+          "alert_type": "Special Schedule",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Saturday and Sunday, March 1 - 23",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22775",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1740799800,
+            "end": 1740986100
+          },
+          {
+            "start": 1741404600,
+            "end": 1741587300
+          },
+          {
+            "start": 1742005800,
+            "end": 1742192100
+          },
+          {
+            "start": 1742610600,
+            "end": 1742796900
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "4",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:4:19"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Buses replace trains between Deer Park and Greenport",
+              "language": "en"
+            },
+            {
+              "text": "<p>Buses replace trains between Deer Park and Greenport</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Normal service runs between Manhattan and Farmingdale, with hourly trains continuing to Deer Park. Transfer at Deer Park for bus service to and from points east.\n\nConsider using the Montauk or Port Jefferson branches instead to avoid busing.\n\nThe last trains to run on Friday night are the 9:01pm from Penn Station and the 10:23pm from Ronkonkoma. Service resumes with the 1:32am from Penn Station and the 4:13am from Ronkonkoma on Monday morning.\n\nWhat's happening?\nSwitch replacement",
+              "language": "en"
+            },
+            {
+              "text": "<p>Normal service runs between Manhattan and Farmingdale, with hourly trains continuing to Deer Park. Transfer at Deer Park for bus service to and from points east.</p><p style=\"min-height:10px\"></p><p>Consider using the Montauk or Port Jefferson branches instead to avoid busing.</p><p style=\"min-height:10px\"></p><p>The last trains to run on Friday night are the 9:01pm from Penn Station and the 10:23pm from Ronkonkoma. Service resumes with the 1:32am from Penn Station and the 4:13am from Ronkonkoma on Monday morning.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p>Switch replacement</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1739553805,
+          "updated_at": 1742192100,
+          "alert_type": "Planned - Substitute Buses",
+          "display_before_active": 7200,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Fri 10:30 PM to Mon 2:15 AM, Feb 28 - Mar 24",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22651",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1740398400,
+            "end": 1740439800
+          },
+          {
+            "start": 1741003200,
+            "end": 1741044600
+          },
+          {
+            "start": 1741604400,
+            "end": 1741645800
+          },
+          {
+            "start": 1742209200,
+            "end": 1742250600
+          },
+          {
+            "start": 1742814000,
+            "end": 1742855400
+          },
+          {
+            "start": 1743418800,
+            "end": 1743460200
+          },
+          {
+            "start": 1744023600,
+            "end": 1744065000
+          },
+          {
+            "start": 1744628400,
+            "end": 1744669800
+          },
+          {
+            "start": 1745233200,
+            "end": 1745274600
+          },
+          {
+            "start": 1745838000,
+            "end": 1745879400
+          },
+          {
+            "start": 1746442800,
+            "end": 1746484200
+          },
+          {
+            "start": 1747047600,
+            "end": 1747089000
+          },
+          {
+            "start": 1740484800,
+            "end": 1740526200
+          },
+          {
+            "start": 1741089600,
+            "end": 1741131000
+          },
+          {
+            "start": 1741690800,
+            "end": 1741732200
+          },
+          {
+            "start": 1742295600,
+            "end": 1742337000
+          },
+          {
+            "start": 1742900400,
+            "end": 1742941800
+          },
+          {
+            "start": 1743505200,
+            "end": 1743546600
+          },
+          {
+            "start": 1744110000,
+            "end": 1744151400
+          },
+          {
+            "start": 1744714800,
+            "end": 1744756200
+          },
+          {
+            "start": 1745319600,
+            "end": 1745361000
+          },
+          {
+            "start": 1745924400,
+            "end": 1745965800
+          },
+          {
+            "start": 1746529200,
+            "end": 1746570600
+          },
+          {
+            "start": 1747134000,
+            "end": 1747175400
+          },
+          {
+            "start": 1740571200,
+            "end": 1740612600
+          },
+          {
+            "start": 1741176000,
+            "end": 1741217400
+          },
+          {
+            "start": 1741777200,
+            "end": 1741818600
+          },
+          {
+            "start": 1742382000,
+            "end": 1742423400
+          },
+          {
+            "start": 1742986800,
+            "end": 1743028200
+          },
+          {
+            "start": 1743591600,
+            "end": 1743633000
+          },
+          {
+            "start": 1744196400,
+            "end": 1744237800
+          },
+          {
+            "start": 1744801200,
+            "end": 1744842600
+          },
+          {
+            "start": 1745406000,
+            "end": 1745447400
+          },
+          {
+            "start": 1746010800,
+            "end": 1746052200
+          },
+          {
+            "start": 1746615600,
+            "end": 1746657000
+          },
+          {
+            "start": 1747220400,
+            "end": 1747261800
+          },
+          {
+            "start": 1740657600,
+            "end": 1740699000
+          },
+          {
+            "start": 1741262400,
+            "end": 1741303800
+          },
+          {
+            "start": 1741863600,
+            "end": 1741905000
+          },
+          {
+            "start": 1742468400,
+            "end": 1742509800
+          },
+          {
+            "start": 1743073200,
+            "end": 1743114600
+          },
+          {
+            "start": 1743678000,
+            "end": 1743719400
+          },
+          {
+            "start": 1744282800,
+            "end": 1744324200
+          },
+          {
+            "start": 1744887600,
+            "end": 1744929000
+          },
+          {
+            "start": 1745492400,
+            "end": 1745533800
+          },
+          {
+            "start": 1746097200,
+            "end": 1746138600
+          },
+          {
+            "start": 1746702000,
+            "end": 1746743400
+          },
+          {
+            "start": 1747306800,
+            "end": 1747348200
+          },
+          {
+            "start": 1740744000,
+            "end": 1740785400
+          },
+          {
+            "start": 1741348800,
+            "end": 1741390200
+          },
+          {
+            "start": 1741950000,
+            "end": 1741991400
+          },
+          {
+            "start": 1742554800,
+            "end": 1742596200
+          },
+          {
+            "start": 1743159600,
+            "end": 1743201000
+          },
+          {
+            "start": 1743764400,
+            "end": 1743805800
+          },
+          {
+            "start": 1744369200,
+            "end": 1744410600
+          },
+          {
+            "start": 1744974000,
+            "end": 1745015400
+          },
+          {
+            "start": 1745578800,
+            "end": 1745620200
+          },
+          {
+            "start": 1746183600,
+            "end": 1746225000
+          },
+          {
+            "start": 1746788400,
+            "end": 1746829800
+          },
+          {
+            "start": 1747393200,
+            "end": 1747434600
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "4",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:4:19"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Buses replace trains between Ronkonkoma and Greenport",
+              "language": "en"
+            },
+            {
+              "text": "<p>Buses replace trains between Ronkonkoma and Greenport</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "What's happening?\nTrack replacement",
+              "language": "en"
+            },
+            {
+              "text": "<p><strong>What's happening?</strong></p><p>Track replacement</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1738774234,
+          "updated_at": 1742382000,
+          "alert_type": "Planned - Substitute Buses",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mon to Fri, 7:00 AM to 6:30 PM, Feb 24 - May 16",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:19754",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1726286400,
+            "end": 1747540800
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "LI",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:1:10"
+            }
+          },
+          {
+            "agency_id": "LI",
+            "route_id": "5",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "LI:5:10"
+            }
+          },
+          {
+            "agency_id": "LI",
+            "stop_id": "27"
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "You must be in the first six cars to exit eastbound trains at Babylon.",
+              "language": "en"
+            },
+            {
+              "text": "<p>You must be in the first six cars to exit eastbound trains at <b>Babylon</b>.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Westbound riders must be in the last six cars to exit.\n\nThe western half of both platforms are closed for replacement. Please allow additional time to get upstairs, and check the TrainTime app or listen for announcements for possible track changes as construction continues.",
+              "language": "en"
+            },
+            {
+              "text": "<p>Westbound riders must be in the <strong>last</strong> six cars to exit.</p><p></p><p>The western half of both platforms are closed for replacement. Please allow additional time to get upstairs, and check the TrainTime app or listen for announcements for possible track changes as construction continues.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1725565719,
+          "updated_at": 1727063703,
+          "alert_type": "Boarding Change",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "September 14 through May 2025",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

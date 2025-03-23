@@ -1,0 +1,550 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": 1742688463,
+    "transit_realtime.mercury_feed_header": {
+      "mercury_version": "1.0"
+    }
+  },
+  "entity": [
+    {
+      "id": "lmm:alert:418433",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1742688455
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "3",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:3:24"
+            }
+          },
+          {
+            "agency_id": "MNR",
+            "stop_id": "127"
+          },
+          {
+            "agency_id": "MNR",
+            "trip": {
+              "trip_id": "246075724607576+1200934+0",
+              "start_date": "2025-03-22",
+              "route_id": "3"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "The 7:02pm train from Grand Central to New Haven is delayed at Noroton Heights because of a request for medical assistance.",
+              "language": "en"
+            },
+            {
+              "text": "<p>The <b>7:02pm train from Grand Central to New Haven</b> is delayed at <b>Noroton Heights</b> because of a request for medical assistance.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742688455,
+          "updated_at": 1742688455,
+          "alert_type": "Some Delays",
+          "display_before_active": 0
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23322",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1742612400,
+            "end": 1742806800
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:1:3"
+            }
+          },
+          {
+            "agency_id": "MNR",
+            "stop_id": "44"
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "All trains arrive and depart on Track 2 at Breakneck Ridge.",
+              "language": "en"
+            },
+            {
+              "text": "<p>All trains arrive and depart on Track 2 at <b>Breakneck Ridge</b>.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            },
+            {
+              "text": "<p></p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742489344,
+          "updated_at": 1742489344,
+          "alert_type": "Station Notice",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 21 - 24, Fri 11:00 PM to Mon 5:00 AM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23321",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1742612400,
+            "end": 1742806800
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:1:3"
+            }
+          },
+          {
+            "agency_id": "MNR",
+            "stop_id": "40"
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "All trains arrive and depart on Track 2 at Manitou.",
+              "language": "en"
+            },
+            {
+              "text": "<p>All trains arrive and depart on Track 2 at <b>Manitou</b>.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "",
+              "language": "en"
+            },
+            {
+              "text": "<p></p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1742489296,
+          "updated_at": 1742489296,
+          "alert_type": "Station Notice",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 21 - 24, Fri 11:00 PM to Mon 5:00 AM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23220",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1743222600,
+            "end": 1743393540
+          },
+          {
+            "start": 1743827400,
+            "end": 1743998340
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "51",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:51:19"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "No trains between Suffern and Port Jervis. Buses run between Ramsey-Route 17 and all stations Sloatsburg through Port Jervis",
+              "language": "en"
+            },
+            {
+              "text": "<p>No trains between Suffern and Port Jervis. Buses run between Ramsey-Route 17 and all stations Sloatsburg through Port Jervis</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Trains will operate between Hoboken and Suffern, on modified schedules with express trains not running.\nRiders traveling from Otisville and Salisbury Mills to Hoboken and New York should consider using the Middletown or Harriman stations instead, as only local bus service will be available which does not connect with the train at Ramsey-Route 17.\n\nBusing begins with the 12:39 AM train from Hoboken on Friday night/Saturday morning. Train service resumes late Sunday/early Monday with the 12:39 AM from Hoboken and the 3:46 AM from Port Jervis.\n\nDownload the bus schedule to plan your trip.What's happening?\nTrack maintenance",
+              "language": "en"
+            },
+            {
+              "text": "<p>Trains will operate between Hoboken and Suffern, on modified schedules with express trains not running.</p><p>Riders traveling from Otisville and Salisbury Mills to Hoboken and New York should consider using the Middletown or Harriman stations instead, as only local bus service will be available which does not connect with the train at Ramsey-Route 17.</p><p style=\"min-height:10px\"></p><p>Busing begins with the 12:39 AM train from Hoboken on Friday night/Saturday morning. Train service resumes late Sunday/early Monday with the 12:39 AM from Hoboken and the 3:46 AM from Port Jervis.</p><p style=\"min-height:10px\"></p><p><a title=\"\" href=\"https://www.mta.info/document/166466\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">Download the bus schedule</a> to plan your trip.<br><br><strong>What's happening?</strong></p><p>Track maintenance</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1741914341,
+          "updated_at": 1741984836,
+          "alert_type": "Planned - Substitute Buses",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 29 - 30 and Apr 5 - 6, Sat 12:30 AM to Sun 11:59 PM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23189",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1744423207,
+            "end": 1744617600
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "2",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:2:19"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Buses replace trains between Southeast and Wassaic",
+              "language": "en"
+            },
+            {
+              "text": "<p>Buses replace trains between Southeast and Wassaic</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Download the special schedule for bus departure times.\n\nThe last trains to run on Friday evening are the 9:27pm from Southeast (connects with the 7:54pm from Grand Central) and the 9:32pm from Wassaic.\n\nWhat's happening?\nTrack maintenance",
+              "language": "en"
+            },
+            {
+              "text": "<p><a title=\"\" href=\"https://www.mta.info/document/166411\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">Download the special schedule</a> for bus departure times.</p><p style=\"min-height:10px\"></p><p>The last trains to run on Friday evening are the 9:27pm from Southeast (connects with the 7:54pm from Grand Central) and the 9:32pm from Wassaic.</p><p style=\"min-height:10px\"></p><p><strong>What's happening?</strong></p><p>Track maintenance</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1741751140,
+          "updated_at": 1741984822,
+          "alert_type": "Planned - Substitute Buses",
+          "display_before_active": 7200,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Apr 11 - 14, Fri 10:00 PM to Mon 4:00 AM",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23099",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1742643900,
+            "end": 1742702340
+          },
+          {
+            "start": 1742730300,
+            "end": 1742788740
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:1:11"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Hudson Line service runs on a modified schedule",
+              "language": "en"
+            },
+            {
+              "text": "<p>Hudson Line service runs on a modified schedule</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Use the TrainTime app or visit mta.info/schedules to plan your revised trip.\n\nWhat's happening?\nTrack maintenance",
+              "language": "en"
+            },
+            {
+              "text": "<p>Use the TrainTime app or visit <a title=\"\" href=\"https://mta.info/schedules\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">mta.info/schedules</a> to plan your revised trip.</p><p></p><p><strong>What's happening?</strong></p><p>Track maintenance</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1741123567,
+          "updated_at": 1741123567,
+          "alert_type": "Special Schedule",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Mar 22 - 23, Sat and Sun, 7:45 AM to midnight",
+                "language": "en"
+              }
+            ]
+          },
+          "clone_id": "lmm:planned_work:22916"
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:23070",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1741086000,
+            "end": 1743760800
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "3",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:3:3"
+            }
+          },
+          {
+            "agency_id": "MNR",
+            "stop_id": "145"
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Please use the east end of the platform on Track 1 at Milford to board trains towards New York City.",
+              "language": "en"
+            },
+            {
+              "text": "<p>Please use the east end of the platform on Track 1 at <b>Milford</b> to board trains towards New York City.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "The west end of the platform will be temporarily closed.",
+              "language": "en"
+            },
+            {
+              "text": "<p>The west end of the platform will be temporarily closed.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1741030936,
+          "updated_at": 1741086005,
+          "alert_type": "Station Notice",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "March 4 - April 4",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22970",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1743843600,
+            "end": 1744005600
+          },
+          {
+            "start": 1744448400,
+            "end": 1744610400
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "4",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:4:19"
+            }
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Buses replace trains between Stamford and New Canaan",
+              "language": "en"
+            },
+            {
+              "text": "<p>Buses replace trains between Stamford and New Canaan</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Download the special schedule for bus departure times.\n\nWhat's happening?\nTrack upgrades",
+              "language": "en"
+            },
+            {
+              "text": "<p><a title=\"\" href=\"https://www.mta.info/document/166541\" rel=\"noopener noreferrer nofollow\" data-link-auto=\"\" target=\"_blank\">Download the special schedule</a> for bus departure times.</p><p></p><p><strong>What's happening?</strong></p><p>Track upgrades</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1740511908,
+          "updated_at": 1742263865,
+          "alert_type": "Planned - Substitute Buses",
+          "display_before_active": 3600,
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Saturday and Sunday, Apr 5 - 7 and Apr 12 - 14",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "lmm:planned_work:22394",
+      "alert": {
+        "active_period": [
+          {
+            "start": 1737370800,
+            "end": 1758240000
+          }
+        ],
+        "informed_entity": [
+          {
+            "agency_id": "MNR",
+            "route_id": "1",
+            "transit_realtime.mercury_entity_selector": {
+              "sort_order": "MNR:1:3"
+            }
+          },
+          {
+            "agency_id": "MNR",
+            "stop_id": "49"
+          }
+        ],
+        "header_text": {
+          "translation": [
+            {
+              "text": "Stairs, ramps and sidewalk replacements begin January 20 at New Hamburg. Customers will still have access to Tracks 1 and 2 via temporary ramps and stairs.",
+              "language": "en"
+            },
+            {
+              "text": "<p>Stairs, ramps and sidewalk replacements begin January 20 at <b>New Hamburg</b>. Customers will still have access to Tracks 1 and 2 via temporary ramps and stairs.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "description_text": {
+          "translation": [
+            {
+              "text": "Please allow extra time to reach the platform.",
+              "language": "en"
+            },
+            {
+              "text": "<p>Please allow extra time to reach the platform.</p>",
+              "language": "en-html"
+            }
+          ]
+        },
+        "transit_realtime.mercury_alert": {
+          "created_at": 1736875524,
+          "updated_at": 1737370802,
+          "alert_type": "Station Notice",
+          "human_readable_active_period": {
+            "translation": [
+              {
+                "text": "Jan 20 - Ongoing",
+                "language": "en"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
