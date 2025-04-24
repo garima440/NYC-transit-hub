@@ -1,9 +1,18 @@
+// pages/index.tsx
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import TransitStatus from "./components/TransitStatus";
+import ServiceAlerts from "./components/ServiceAlerts";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
+      <Head>
+        <title>NYC Transit Hub</title>
+        <meta name="description" content="Real-time NYC transit information and trip planning" />
+      </Head>
+
       {/* Hero Section - Simplified but professional */}
       <header className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -113,65 +122,30 @@ export default function Home() {
             Transit System Status
           </h2>
           
-          <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden">
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
-                <span className="inline-block h-2 w-2 rounded-full bg-green-500 mr-2"></span>
-                Subway Line Status
-              </h3>
-              
-              <div className="space-y-3">
-                {/* Example subway lines - these would be dynamically generated */}
-                <div className="flex items-center justify-between p-3 border-b border-gray-100 dark:border-gray-700">
-                  <div className="flex items-center gap-3">
-                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">1</span>
-                    <span className="text-gray-900 dark:text-white">Broadway - 7 Avenue Local</span>
-                  </div>
-                  <span className="text-green-600 dark:text-green-400 font-medium">Good Service</span>
-                </div>
-                
-                <div className="flex items-center justify-between p-3 border-b border-gray-100 dark:border-gray-700">
-                  <div className="flex items-center gap-3">
-                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center font-bold">2</span>
-                    <span className="text-gray-900 dark:text-white">7 Avenue Express</span>
-                  </div>
-                  <span className="text-yellow-600 dark:text-yellow-400 font-medium">Minor Delays</span>
-                </div>
-                
-                <div className="flex items-center justify-between p-3 border-b border-gray-100 dark:border-gray-700">
-                  <div className="flex items-center gap-3">
-                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">4</span>
-                    <span className="text-gray-900 dark:text-white">Lexington Avenue Express</span>
-                  </div>
-                  <span className="text-green-600 dark:text-green-400 font-medium">Good Service</span>
-                </div>
-                
-                <div className="flex items-center justify-between p-3">
-                  <div className="flex items-center gap-3">
-                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">F</span>
-                    <span className="text-gray-900 dark:text-white">Queens-Manhattan-Brooklyn Local</span>
-                  </div>
-                  <span className="text-red-600 dark:text-red-400 font-medium">Service Changes</span>
-                </div>
-              </div>
-              
-              <div className="mt-6 text-center">
-                <Link 
-                  href="/status" 
-                  className="inline-flex items-center justify-center px-4 py-2 rounded-md border border-transparent bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium"
-                >
-                  View Complete System Status
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/* Replace static content with the TransitStatus component */}
+          <TransitStatus showAll={false} />
         </div>
       </section>
-
-
+      
+      {/* Service Alerts Preview Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            Recent Service Alerts
+          </h2>
+          <Link 
+            href="/status?tab=alerts"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+          >
+            View All Alerts
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+            </svg>
+          </Link>
+        </div>
+        
+        <ServiceAlerts limit={3} groupByLine={false} />
+      </section>
 
       {/* Footer - Clean and professional */}
       <footer className="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
@@ -217,7 +191,7 @@ export default function Home() {
             <h4 className="font-bold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li><Link href="/help" className="text-gray-300 hover:text-white transition-colors">Help Center</Link></li>
-              <li><Link href="/alerts" className="text-gray-300 hover:text-white transition-colors">Service Alerts</Link></li>
+              <li><Link href="/status" className="text-gray-300 hover:text-white transition-colors">Service Status</Link></li>
               <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
             </ul>
