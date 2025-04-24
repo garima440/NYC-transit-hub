@@ -229,42 +229,88 @@ const TransitMap = () => {
 
   // Initialize map
   useEffect(() => {
-    if (map.current) return;
-    
-    if (!mapContainer.current) return;
-    
-    // Check if token exists
-    if (!mapboxgl.accessToken) {
-      console.error('Mapbox token is missing! Please add NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN to your .env.local file');
-      setError('Missing Mapbox access token. Please configure your environment.');
-      return;
-    }
-    
+    if (map.current || !mapContainer.current) return;
+
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/streets-v11',
       center: DEFAULT_MAP_CENTER,
-      zoom: DEFAULT_ZOOM
+      zoom: DEFAULT_ZOOM,
     });
 
     map.current.addControl(new mapboxgl.NavigationControl());
-    map.current.addControl(
-      new mapboxgl.GeolocateControl({
-        positionOptions: {
-          enableHighAccuracy: true
-        },
-        trackUserLocation: true
-      })
-    );
+    map.current.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: { enableHighAccuracy: true },
+      trackUserLocation: true,
+    }));
 
-    map.current.on('load', () => {
-      fetchInitialData();
+    map.current.on('load', async () => {
+      if (!map.current) return;
+
+      try {
+        const lineRes = await fetch(`${API_BASE_URL}/subway/lines`);
+        const lineData = await lineRes.json();
+
+        map.current.addSource('subway-lines', {
+          type: 'geojson',
+          data: lineData,
+        });
+
+        map.current.addLayer({
+          id: 'subway-lines',
+          type: 'line',
+          source: 'subway-lines',
+          paint: {
+            'line-color': ['get', 'color'],
+            'line-width': 3,
+          },
+        });
+
+        map.current.addLayer({
+          id: 'line-labels',
+          type: 'symbol',
+          source: 'subway-lines',
+          layout: {
+            'symbol-placement': 'line',
+            'text-field': ['get', 'route_name'],
+            'text-size': 10,
+          },
+          paint: {
+            'text-color': '#000',
+            'text-halo-color': '#fff',
+            'text-halo-width': 1,
+          },
+        });
+
+        const stopRes = await fetch(`${API_BASE_URL}/subway/stops`);
+        const stopData = await stopRes.json();
+
+        map.current.addSource('subway-stops', {
+          type: 'geojson',
+          data: stopData,
+        });
+
+        map.current.addLayer({
+          id: 'subway-stops',
+          type: 'circle',
+          source: 'subway-stops',
+          paint: {
+            'circle-radius': 3,
+            'circle-color': '#111',
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#fff',
+          },
+        });
+      } catch (error) {
+        console.error('Error loading subway map:', error);
+      }
     });
 
     return () => {
       map.current?.remove();
     };
   }, []);
+
 
   // Update map when data or filters change
   useEffect(() => {
@@ -397,7 +443,11 @@ const TransitMap = () => {
         type: 'circle',
         source: 'subway-vehicles',
         paint: {
-          'circle-radius': 6,
+          'circle-radius': [
+            'interpolate', ['linear'], ['zoom'],
+            10, 3,
+            15, 6
+          ],
           'circle-color': [
             'match',
             ['get', 'route_id'],
@@ -523,12 +573,7 @@ const TransitMap = () => {
           onFilterChange={handleFilterChange} 
         />
         
-        {loading && (
-          <div className="loading-overlay">
-            <div className="loading-spinner"></div>
-            <p>Loading transit data...</p>
-          </div>
-        )}
+        
       </div>
     </ErrorBoundary>
   );
@@ -537,12 +582,12 @@ const TransitMap = () => {
 // Main Page Component
 export default function Page() {
   const [dataStatus, setDataStatus] = useState<StatusData | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  
 
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        setLoading(true);
+        
         
         // Try to fetch data from backend
         try {
@@ -561,7 +606,7 @@ export default function Page() {
       } catch (error) {
         console.error('Error in status check:', error);
       } finally {
-        setLoading(false);
+        
       }
     };
 

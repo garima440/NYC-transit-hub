@@ -1,19 +1,18 @@
 # backend/routes/transit_routes.py
 from flask import Blueprint, jsonify, request
 from services.mta_service import MTAService
+from data.gtfs_parser import load_shapes
+
 import time
 
 transit_bp = Blueprint('transit', __name__)
 mta_service = MTAService()
 
-@transit_bp.route('/api/subway/<line>', methods=['GET'])
-def get_subway_data(line):
-    """Get subway data for a specific line"""
-    try:
-        data = mta_service.fetch_subway_feed(line)
-        return jsonify(data)
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+
+
+from data.gtfs_subway_map import generate_lines_geojson, generate_stops_geojson
+
+
 
 @transit_bp.route('/api/subway/all', methods=['GET'])
 def get_all_subway_data():
@@ -82,3 +81,36 @@ def get_data_status():
     except Exception as e:
         print(f"Error getting data status: {str(e)}")
         return jsonify({'error': 'No data available yet'})
+    
+@transit_bp.route('/api/subway/lines', methods=['GET'])
+def get_subway_lines():
+    """Return subway route lines as GeoJSON"""
+    try:
+        return jsonify(generate_lines_geojson())
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@transit_bp.route('/api/subway/stops', methods=['GET'])
+def get_subway_stops():
+    """Return subway station locations as GeoJSON"""
+    try:
+        return jsonify(generate_stops_geojson())
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@transit_bp.route('/api/subway/shapes', methods=['GET'])
+def get_subway_shapes():
+    """Return GeoJSON subway route lines"""
+    try:
+        return jsonify(load_shapes())
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@transit_bp.route('/api/subway/<line>', methods=['GET'])
+def get_subway_data(line):
+    """Get subway data for a specific line"""
+    try:
+        data = mta_service.fetch_subway_feed(line)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
