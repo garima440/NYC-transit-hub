@@ -1,6 +1,6 @@
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001';
 
-export default {
+const config = {
   base: API_BASE_URL,
   endpoints: {
     // Subway data endpoints
@@ -17,3 +17,5 @@ export default {
     elevator: (statusType: string = 'current') => `${API_BASE_URL}/api/elevator/${statusType}`,
   }
 };
+
+export default config;

@@ -666,13 +666,13 @@ export default function Page() {
       <TransitMap />
       
       <div className="mt-6 p-4 bg-gray-100 rounded-lg">
-        <h2 className="text-xl font-semibold mb-2">About This Map</h2>
-        <p>
+        <h2 className="text-xl font-semibold mb-2 text-black">About This Map</h2>
+        <p className="text-black">
           This map displays real-time information for NYC subway lines. Data is refreshed every 60 seconds
           from the MTA's real-time feeds. Click on a train to see more information about its status and any
           service alerts.
         </p>
-        <p className="mt-2">
+        <p className="mt-2 text-black">
           Use the filter controls below the map to select which transit types to display.
         </p>
       </div>

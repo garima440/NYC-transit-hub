@@ -2,7 +2,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import TransitMap from '../map/TransitMap';
+
 import { getDataStatus, StatusData } from '../lib/api';
 import { STATUS_REFRESH_INTERVAL } from '../lib/constants';
 import '../styles/map.css';
@@ -49,7 +49,7 @@ const TransitMapPage: React.FC = () => {
         </div>
       )}
       
-      <TransitMap />
+      
       
       <div className="mt-6 p-4 bg-gray-100 rounded-lg">
         <h2 className="text-xl font-semibold mb-2">About This Map</h2>

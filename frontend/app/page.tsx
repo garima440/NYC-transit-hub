@@ -39,11 +39,11 @@ export default function Home() {
                   Service Alerts
                 </Link>
                 <Link
-                  href="/transit-map"
-                  className="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-base font-medium text-blue-700 shadow-sm hover:bg-blue-50 transition-colors"
-                >
-                  View Interactive Map
-                </Link>
+              href="/transit-map"
+              className="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-base font-medium text-blue-700 shadow-sm hover:bg-blue-50 transition-colors"
+            >
+              View Interactive Map
+            </Link>
               </div>
             </div>
             <div className="hidden md:block">
@@ -53,7 +53,7 @@ export default function Home() {
                 <Image
                   src="/subway-map.svg"
                   alt="NYC Subway Map"
-                  width={500}
+                  width={550}
                   height={400}
                   className="rounded-md"
                 />
