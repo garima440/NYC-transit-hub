@@ -1,5 +1,5 @@
 // app/status/page.tsx
-"use client"; // Important! This is needed for client components in App Router
+"use client"; 
 
 import React, { useState, useEffect } from 'react';
 import TransitStatus from '../components/TransitStatus';

@@ -33,15 +33,23 @@ export default function Home() {
                   Plan Your Trip
                 </Link>
                 <Link
-                  href="/alerts"
+                  href="/status?tab=alerts"
                   className="inline-flex items-center justify-center rounded-md border border-white px-5 py-3 text-base font-medium text-white hover:bg-blue-700 transition-colors"
                 >
                   Service Alerts
                 </Link>
+                <Link
+                  href="/transit-map"
+                  className="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-base font-medium text-blue-700 shadow-sm hover:bg-blue-50 transition-colors"
+                >
+                  View Interactive Map
+                </Link>
               </div>
             </div>
             <div className="hidden md:block">
+            <Link href="/transit-map" className="block">
               <div className="bg-white p-3 rounded-lg shadow-lg">
+              
                 <Image
                   src="/subway-map.svg"
                   alt="NYC Subway Map"
@@ -50,6 +58,7 @@ export default function Home() {
                   className="rounded-md"
                 />
               </div>
+              </Link>
             </div>
           </div>
         </div>

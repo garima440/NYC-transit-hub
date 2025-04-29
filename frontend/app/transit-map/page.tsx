@@ -5,6 +5,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import type { Point, Feature, FeatureCollection, Geometry } from 'geojson';
 import '../styles/map.css';
+import Link from 'next/link';
 
 // Set Mapbox access token from environment variable
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FyaW1hNDQwIiwiYSI6ImNtOXN3eWw5ajA0MGYyanB4ZXVrN3NyeGUifQ.AgRPggYtFbIs8P0GIfncMg';
@@ -229,87 +230,91 @@ const TransitMap = () => {
 
   // Initialize map
   useEffect(() => {
-    if (map.current || !mapContainer.current) return;
-
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: DEFAULT_MAP_CENTER,
-      zoom: DEFAULT_ZOOM,
-    });
-
-    map.current.addControl(new mapboxgl.NavigationControl());
-    map.current.addControl(new mapboxgl.GeolocateControl({
-      positionOptions: { enableHighAccuracy: true },
-      trackUserLocation: true,
-    }));
-
-    map.current.on('load', async () => {
-      if (!map.current) return;
-
-      try {
-        const lineRes = await fetch(`${API_BASE_URL}/subway/lines`);
-        const lineData = await lineRes.json();
-
-        map.current.addSource('subway-lines', {
-          type: 'geojson',
-          data: lineData,
-        });
-
-        map.current.addLayer({
-          id: 'subway-lines',
-          type: 'line',
-          source: 'subway-lines',
-          paint: {
-            'line-color': ['get', 'color'],
-            'line-width': 3,
-          },
-        });
-
-        map.current.addLayer({
-          id: 'line-labels',
-          type: 'symbol',
-          source: 'subway-lines',
-          layout: {
-            'symbol-placement': 'line',
-            'text-field': ['get', 'route_name'],
-            'text-size': 10,
-          },
-          paint: {
-            'text-color': '#000',
-            'text-halo-color': '#fff',
-            'text-halo-width': 1,
-          },
-        });
-
-        const stopRes = await fetch(`${API_BASE_URL}/subway/stops`);
-        const stopData = await stopRes.json();
-
-        map.current.addSource('subway-stops', {
-          type: 'geojson',
-          data: stopData,
-        });
-
-        map.current.addLayer({
-          id: 'subway-stops',
-          type: 'circle',
-          source: 'subway-stops',
-          paint: {
-            'circle-radius': 3,
-            'circle-color': '#111',
-            'circle-stroke-width': 1,
-            'circle-stroke-color': '#fff',
-          },
-        });
-      } catch (error) {
-        console.error('Error loading subway map:', error);
-      }
-    });
-
+    let initTimeout = setTimeout(() => {
+      if (map.current || !mapContainer.current) return;
+  
+      map.current = new mapboxgl.Map({
+        container: mapContainer.current,
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: DEFAULT_MAP_CENTER,
+        zoom: DEFAULT_ZOOM,
+      });
+  
+      map.current.addControl(new mapboxgl.NavigationControl());
+      map.current.addControl(new mapboxgl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+      }));
+  
+      map.current.on('load', async () => {
+        if (!map.current) return;
+  
+        try {
+          const lineRes = await fetch(`${API_BASE_URL}/subway/lines`);
+          const lineData = await lineRes.json();
+  
+          map.current.addSource('subway-lines', {
+            type: 'geojson',
+            data: lineData,
+          });
+  
+          map.current.addLayer({
+            id: 'subway-lines',
+            type: 'line',
+            source: 'subway-lines',
+            paint: {
+              'line-color': ['get', 'color'],
+              'line-width': 3,
+            },
+          });
+  
+          map.current.addLayer({
+            id: 'line-labels',
+            type: 'symbol',
+            source: 'subway-lines',
+            layout: {
+              'symbol-placement': 'line',
+              'text-field': ['get', 'route_name'],
+              'text-size': 10,
+            },
+            paint: {
+              'text-color': '#000',
+              'text-halo-color': '#fff',
+              'text-halo-width': 1,
+            },
+          });
+  
+          const stopRes = await fetch(`${API_BASE_URL}/subway/stops`);
+          const stopData = await stopRes.json();
+  
+          map.current.addSource('subway-stops', {
+            type: 'geojson',
+            data: stopData,
+          });
+  
+          map.current.addLayer({
+            id: 'subway-stops',
+            type: 'circle',
+            source: 'subway-stops',
+            paint: {
+              'circle-radius': 3,
+              'circle-color': '#111',
+              'circle-stroke-width': 1,
+              'circle-stroke-color': '#fff',
+            },
+          });
+        } catch (error) {
+          console.error('Error loading subway map:', error);
+        }
+      });
+    }, 0); // or 50ms if needed
+  
     return () => {
-      map.current?.remove();
+      if (map.current) map.current.remove();
+      clearTimeout(initTimeout);
     };
   }, []);
+  
 
 
   // Update map when data or filters change
@@ -620,7 +625,32 @@ export default function Page() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">NYC Transit Map</h1>
+      {/* --- Add a nice Header with Back to Home button --- */}
+      <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+            NYC Transit Map
+          </h1>
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            View real-time subway and transit locations across NYC
+          </p>
+        </div>
+        <div className="mt-4 md:mt-0">
+          <Link 
+            href="/"
+            className="inline-flex items-center px-4 py-2 border border-transparent 
+                      text-sm font-medium rounded-md text-blue-700 bg-blue-100 
+                      hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-200 
+                      dark:hover:bg-blue-800 transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Home
+          </Link>
+        </div>
+      </header>
+
       
       {dataStatus && (
         <div className="status-bar mb-4 text-sm text-gray-600">
