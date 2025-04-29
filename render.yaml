@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: flask-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn backend.app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 10000
+
+  - type: web
+    name: nextjs-frontend
+    env: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_BASE_URL
+        value: https://flask-backend.onrender.com
