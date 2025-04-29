@@ -1,6 +1,8 @@
 # NYC-transit-hub
 
 A comprehensive web application providing real-time information about New York City's transit system, including subway, bus, and rail services.
+<img width="1470" alt="ss" src="https://github.com/user-attachments/assets/1f47753e-621d-48b9-a855-d8708852965b" />
+
 
 ## Features
 
