@@ -1,12 +1,26 @@
+
 "use client";
+
+
+import { useTranslation } from "react-i18next";
+
+// pages/index.tsx
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import TransitStatus from "./components/TransitStatus";
+import ServiceAlerts from "./components/ServiceAlerts";
+
 
 export default function Home() {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
+      <Head>
+        <title>NYC Transit Hub</title>
+        <meta name="description" content="Real-time NYC transit information and trip planning" />
+      </Head>
+
       {/* Hero Section - Simplified but professional */}
       <header className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -156,6 +170,7 @@ export default function Home() {
             {t("transitStatus.title")}
           </h2>
 
+
           <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden">
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
@@ -248,6 +263,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+          
+          {/* Replace static content with the TransitStatus component */}
+          <TransitStatus showAll={false} />
+        </div>
+      </section>
+      
+      {/* Service Alerts Preview Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            Recent Service Alerts
+          </h2>
+          <Link 
+            href="/status?tab=alerts"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+          >
+            View All Alerts
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+            </svg>
+          </Link>
+        </div>
+        
+        <ServiceAlerts limit={3} groupByLine={false} />
+      </section>
+
 
       {/* Footer - Clean and professional */}
       <footer className="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
@@ -350,6 +392,7 @@ export default function Home() {
           <div>
             <h4 className="font-bold mb-4">{t("footer.resources")}</h4>
             <ul className="space-y-2">
+
               <li>
                 <Link
                   href="/help"
@@ -382,6 +425,12 @@ export default function Home() {
                   {t("footer.about")}
                 </Link>
               </li>
+
+              <li><Link href="/help" className="text-gray-300 hover:text-white transition-colors">Help Center</Link></li>
+              <li><Link href="/status" className="text-gray-300 hover:text-white transition-colors">Service Status</Link></li>
+              <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
+
             </ul>
           </div>
 
